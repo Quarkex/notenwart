@@ -1,0 +1,5 @@
+DAYS_TO_BACKUP=3
+INSTANCES_FOLDER="/srv/notenwart"
+BACKUP_FOLDER="/srv/notenwart_backups"
+PROJECT_TEMPLATES_FOLDER="/etc/notenwart/project_templates"
+IMAGE_SOURCES_FOLDER="/etc/notenwart/image_sources"
