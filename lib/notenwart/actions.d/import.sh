@@ -14,9 +14,6 @@ set_action "import" "repo_name remote_url -m -d="                             \
 ""
 
 import(){(
-    repo_name="$1"
-    remote_url="$2"
-
     [[ "$repo_name" == *.git ]] || repo_name="${repo_name}.git"
 
     if [[ ! "$repo_name" =~ ^[A-Za-z0-9._-]+(\.git)?$ ]]; then

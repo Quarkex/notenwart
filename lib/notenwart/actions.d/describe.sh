@@ -5,10 +5,6 @@ set_action "describe" "repo_name description"                                 \
 ""
 
 describe(){(
-    repo_name="$1"
-    shift
-    description="$*"
-
     [[ "$repo_name" == *.git ]] || repo_name="${repo_name}.git"
 
     if [[ ! "$repo_name" =~ ^[A-Za-z0-9._-]+(\.git)?$ ]]; then

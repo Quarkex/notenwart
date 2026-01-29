@@ -5,7 +5,12 @@ set_action "create" "repo_name"                                               \
 ""
 
 create(){(
-    repo_name="$1"
+    if [[ -z "$repo_name" ]]; then
+      echo "ERROR: Missing repository name"
+      echo "Usage: notenwart create <repo_name>"
+      return 1
+    fi
+
     [[ "$repo_name" == *.git ]] || repo_name="${repo_name}.git"
 
     if [[ ! "$repo_name" =~ ^[A-Za-z0-9._-]+(\.git)?$ ]]; then
