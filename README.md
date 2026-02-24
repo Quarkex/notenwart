@@ -198,16 +198,20 @@ KEY=value
 Available options:
 
 ```ini
+NOTENWART_GIT_HOST=$HOSTNAME
 NOTENWART_GIT_USER=git
 NOTENWART_GIT_FOLDER=/srv/git
 NOTENWART_GIT_REPOSITORIES=/srv/git/repos
+NOTENWART_GIT_SSH_PORT=22
 ```
 
 Defaults:
 
+* Git host: `$HOSTNAME`
 * Git user: `git`
 * Git root: `/srv/git`
 * Repositories folder: `/srv/git/repos`
+* Git ssh port: `22`
 
 For safety, Notenwart refuses to run if `NOTENWART_GIT_REPOSITORIES` is `/` or empty.
 

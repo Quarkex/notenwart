@@ -87,6 +87,11 @@ _notenwart_completions()
             # clavichord built-in: -d for descriptions
             arguments="-d"
             ;;
+        origin)
+            case "${#COMP_WORDS[@]}" in
+              *) arguments="$( notenwart list )";;
+            esac
+            ;;
         *)
             arguments=""
             ;;

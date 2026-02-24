@@ -1,3 +1,9 @@
+git_host="$(
+    get_config_value \
+        "NOTENWART_GIT_HOST" \
+        ""
+)"
+
 git_user="$(
     get_config_value \
         "NOTENWART_GIT_USER" \
@@ -14,6 +20,12 @@ git_repositories="$(
     get_config_value \
         "NOTENWART_GIT_REPOSITORIES" \
         "${git_folder}/repos"
+)"
+
+git_ssh_port="$(
+    get_config_value \
+        "NOTENWART_GIT_SSH_PORT" \
+        "22"
 )"
 
 if [[ "$git_repositories" == "/" || "$git_repositories" == "" ]]; then
