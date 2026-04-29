@@ -1,4 +1,4 @@
-set_action "list" ""                                                          \
+set_action "list:" ""                                                         \
 "List all bare git repositories"                                              \
 "Usage:"                                                                      \
 "  %program_name% %action_name%"                                              \

@@ -1,4 +1,4 @@
-set_action "delete" "repo_name -f"                                            \
+set_action "delete!?" "repo_name -f"                                          \
 "Remove a git repository permanently"                                         \
 "Usage:"                                                                      \
 "  %program_name% %action_name% %repo_name% [-f]"                             \

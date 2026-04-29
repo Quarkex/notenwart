@@ -1,4 +1,4 @@
-set_action "describe" "repo_name description"                                 \
+set_action "describe~" "repo_name description"                                \
 "Set the description of a git repository (used by gitweb)"                    \
 "Usage:"                                                                      \
 "  %program_name% %action_name% %repo_name% \"Description text\""             \

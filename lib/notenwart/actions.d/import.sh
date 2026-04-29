@@ -1,4 +1,4 @@
-set_action "import" "repo_name remote_url -m -d="                             \
+set_action "import~" "repo_name remote_url -m -d="                            \
 "Import an existing repository by cloning it into this server (bare/mirror)"  \
 "Usage:"                                                                      \
 "  %program_name% %action_name% %repo_name% %remote_url% [-m] [-d=\"...\"]"   \

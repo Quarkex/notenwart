@@ -1,4 +1,4 @@
-set_action "rename" "old_name new_name"                                       \
+set_action "rename~" "old_name new_name"                                      \
 "Rename an existing repository"                                               \
 "Usage:"                                                                      \
 "  %program_name% %action_name% %old_name% %new_name%"                        \

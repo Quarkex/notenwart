@@ -1,4 +1,4 @@
-set_action "origin" "repo_name"                                               \
+set_action "origin:" "repo_name"                                              \
 "Print the canonical SSH remote URL for a repository"                         \
 "Usage:"                                                                      \
 "  %program_name% %action_name% %repo_name%"                                  \

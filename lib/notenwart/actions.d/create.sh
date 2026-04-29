@@ -1,4 +1,4 @@
-set_action "create" "repo_name"                                               \
+set_action "create~" "repo_name"                                              \
 "Create a new bare git repository"                                            \
 "Usage:"                                                                      \
 "  %program_name% %action_name% %repo_name%"                                  \
